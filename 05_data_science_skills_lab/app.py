@@ -52,7 +52,23 @@ def dashboard() -> str:
     cards = "".join(f"<button class='lab' onclick=run('{key}')><b>{title}</b><span>{description}</span></button>" for key, (title, description) in LABS.items())
     return f"""<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width'><title>DS Skills Lab</title><style>
 :root{{font-family:Inter,system-ui;background:#071523;color:#eaf5ff}}body{{margin:0}}.shell{{max-width:1050px;margin:auto;padding:45px 20px}}.eyebrow{{color:#38bdf8;letter-spacing:.14em;text-transform:uppercase}}h1{{font-size:clamp(2.3rem,6vw,4.8rem);margin:.1em 0}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}}.lab,.card{{background:#0e2538;border:1px solid #28506b;border-radius:18px;padding:20px;color:white;text-align:left}}.lab{{cursor:pointer}}.lab:hover{{border-color:#38bdf8;transform:translateY(-2px)}}.lab b{{display:block;font-size:1.25rem;color:#7dd3fc;margin-bottom:8px}}.lab span{{color:#b8d5e7}}pre{{white-space:pre-wrap;line-height:1.6}}</style></head><body><main class=shell><p class=eyebrow>Project 05 · executable curriculum</p><h1>Data Science Skills Lab</h1><p>Run a skill and receive a designed explanation—not an unfriendly raw JSON wall.</p><section class=grid>{cards}</section><section class=card style='margin-top:20px'><h2 id=heading>Choose a laboratory</h2><pre id=output>Results and interpretation will appear here.</pre></section></main><script>
-async function run(skill){{heading.textContent='Running…';const x=await fetch('/api/skills/'+skill).then(r=>r.json());heading.textContent=x.title;output.textContent=Object.entries(x.result).map(([k,v])=>`${{k.replaceAll('_',' ')}}: ${{Array.isArray(v)?JSON.stringify(v):v}}`).join('\n')}}</script></body></html>"""
+async function run(skill){{
+  const heading=document.getElementById('heading');
+  const output=document.getElementById('output');
+  heading.textContent='Running…';
+  try {{
+    const response=await fetch('/api/skills/'+skill);
+    if(!response.ok) throw new Error('Skill request failed with status '+response.status);
+    const data=await response.json();
+    heading.textContent=data.title;
+    output.textContent=Object.entries(data.result)
+      .map(([key,value])=>`${{key.replaceAll('_',' ')}}: ${{Array.isArray(value)?JSON.stringify(value):value}}`)
+      .join(String.fromCharCode(10));
+  }} catch(error) {{
+    heading.textContent='Unable to run skill';
+    output.textContent=error instanceof Error?error.message:String(error);
+  }}
+}}</script></body></html>"""
 
 
 @app.get("/api/skills")

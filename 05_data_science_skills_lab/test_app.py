@@ -1,6 +1,6 @@
 import unittest
 
-from app import execute_skill
+from app import dashboard, execute_skill, run_skill
 
 
 class SkillsLabTests(unittest.TestCase):
@@ -16,6 +16,12 @@ class SkillsLabTests(unittest.TestCase):
     def test_classifier(self):
         report = execute_skill("classify")
         self.assertGreater(report["balanced_accuracy"], 0.8)
+
+    def test_dashboard_script_and_api_contract(self):
+        self.assertIn("String.fromCharCode(10)", dashboard())
+        response = run_skill("profile")
+        self.assertEqual(response["title"], "Data profiling")
+        self.assertEqual(response["result"]["rows"], 178)
 
 
 if __name__ == "__main__":
