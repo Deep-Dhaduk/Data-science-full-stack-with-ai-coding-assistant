@@ -1,0 +1,4 @@
+fastapi>=0.110,<1
+uvicorn[standard]>=0.27,<1
+scikit-learn>=1.4,<2
+# Optional heavyweight extension: autogluon>=1.1
