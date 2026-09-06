@@ -19,3 +19,7 @@ The business objective is differentiated retention strategy. Synthetic recency, 
 ## Limitations
 
 Personas are descriptive decision aids, not discovered human identities or causal treatment rules. The generated data contains clearer separation than most production customer data. A real deployment must add cohort stability, consent, fairness review, campaign lift tests, and a documented data retention policy.
+
+## Video walkthrough
+
+I uploaded the recorded code and UX walkthrough to this project folder: [watch the Project 03 video](03_customer_segmentation_clustering.mp4).

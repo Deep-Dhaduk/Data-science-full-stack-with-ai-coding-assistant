@@ -4,6 +4,8 @@ Sixteen independent, reproducible projects built from Vijay Eranti's prompt cata
 
 > **Video walkthrough:** Recording pending. The final YouTube URL and chapter timestamps will be added here after all applications pass the release audit.
 
+Individual code-and-UX recordings are stored in their respective project folders and linked from each project README. Recordings for Projects 00–05 are currently uploaded; Projects 06–15 are marked pending until their files are added. The final combined YouTube link is still required for submission.
+
 ## Portfolio
 
 | # | Project | Focus | Status |

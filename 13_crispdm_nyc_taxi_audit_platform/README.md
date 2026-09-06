@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 The default training set is generated and explicitly labeled. The system demonstrates governance mechanics but is not a ten-page external scientific audit and makes no production certification claim. Real deployment would require TLC data ingestion, geospatial/temporal validation, experiment persistence, authentication, monitoring, and human approvals.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `13_crispdm_nyc_taxi_audit_platform.mp4`. Status: pending recording.

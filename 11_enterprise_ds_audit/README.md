@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 Static token and AST heuristics can identify review targets but cannot prove absence of leakage, fairness issues, reward hacking, or operational failure. Every clear report still requires dataset review, executed tests, experiment lineage, and expert sign-off.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `11_enterprise_ds_audit.mp4`. Status: pending recording.

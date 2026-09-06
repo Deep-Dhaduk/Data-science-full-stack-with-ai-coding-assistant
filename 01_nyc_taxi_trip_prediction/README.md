@@ -26,3 +26,7 @@ Open `http://127.0.0.1:8001`; API documentation is at `/docs`.
 ## Provenance and limitations
 
 The default dataset is deterministic, generated, NYC-like demonstration data—not the Kaggle competition dataset. It supports a fully offline experiment but does not capture road topology, live traffic, tolls, or real pricing rules. Predictions are educational and must not be used for dispatch or billing.
+
+## Video walkthrough
+
+I uploaded the recorded code and UX walkthrough to this project folder: [watch the Project 01 video](01_nyc_taxi_trip_prediction.mp4).

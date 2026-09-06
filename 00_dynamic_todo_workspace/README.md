@@ -23,3 +23,7 @@ Open `http://127.0.0.1:8000`. Run tests with `python -m unittest -v`.
 ## Architecture and limitations
 
 The browser uses a small dependency-free client against a typed FastAPI API. The current store is process memory: restarting the server clears tasks, making this suitable as a tested UX/API baseline rather than a production task service. SQLite persistence and user identity are planned enhancements.
+
+## Video walkthrough
+
+I uploaded the recorded code and UX walkthrough to this project folder: [watch the Project 00 video](00_dynamic_todo_workspace.mp4).

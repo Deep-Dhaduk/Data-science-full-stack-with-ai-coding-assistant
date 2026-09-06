@@ -13,3 +13,7 @@ npm run dev
 Open `http://127.0.0.1:8009`. Build for production with `npm run build && npm start`.
 
 The current executor is deliberately sequential and in-memory. Production evolution would add bounded parallelism, cancellation, retries, persisted event history, authentication, worker isolation, and operation-specific adapters.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `09_flowforge_dag_engine.mp4`. Status: pending recording.

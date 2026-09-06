@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 The series is deterministic synthetic demand. Intervals summarize held-out absolute residuals and do not guarantee calibrated conditional coverage. Recursive multi-step error can compound; production work needs rolling-origin evaluation, drift monitoring, holiday regressors, and conformal calibration.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `12_timeseries_forecasting.mp4`. Status: pending recording.

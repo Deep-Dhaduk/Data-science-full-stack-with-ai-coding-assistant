@@ -21,3 +21,7 @@ The checked-in corpus is a tiny, authored data-science safety primer. It has tra
 ## CRISP-DM snapshot
 
 The business goal is teaching transformer mechanics locally. Data understanding is visible through corpus and vocabulary statistics; preparation is character tokenization; modeling is next-character cross-entropy; evaluation uses loss trends and qualitative samples; deployment is an on-demand FastAPI process.
+
+## Video walkthrough
+
+I uploaded the recorded code and UX walkthrough to this project folder: [watch the Project 02 video](02_nano_llm_transformer.mp4).

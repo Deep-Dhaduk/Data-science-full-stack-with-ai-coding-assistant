@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 The scikit-learn Wine dataset keeps execution deterministic and offline. The breadth is educational: an association demonstration on median-binarized features and a compact LSH index are not substitutes for a domain-validated recommendation or retrieval system.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `10_crispdm_masters_curriculum.mp4`. Status: pending recording.

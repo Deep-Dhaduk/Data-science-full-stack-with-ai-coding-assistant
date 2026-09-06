@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 The bundled Breast Cancer Wisconsin dataset makes the default run network-free. This compact tournament demonstrates fair selection but does not reproduce AutoGluon's stacking system; an optional adapter will be added after the core portfolio is stable.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `07_automl_autogluon.mp4`. Status: pending recording.

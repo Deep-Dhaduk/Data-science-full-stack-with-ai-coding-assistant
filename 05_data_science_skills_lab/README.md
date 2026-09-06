@@ -11,3 +11,7 @@ python -m unittest -v
 ```
 
 The built-in Wine dataset has 178 rows and 13 numeric chemical measurements. The laboratories are small demonstrations, not a claim to exhaust every external skill collection. Future lessons will add preprocessing leakage exercises, calibration, fairness, explainability, and time-series validation.
+
+## Video walkthrough
+
+I uploaded the recorded code and UX walkthrough to this project folder: [watch the Project 05 video](05_data_science_skills_lab.mp4).

@@ -13,3 +13,7 @@ python -m unittest -v
 ## Critical disclaimer
 
 The built-in series is synthetic and is not historical SPY. Its backtest is a software and methodology demonstration, not investment advice, a trading recommendation, or evidence of future returns. A serious study must ingest point-in-time adjusted market data, model execution/borrow costs, use nested walk-forward selection, and survive independent reproduction.
+
+## Video walkthrough
+
+The code and UX walkthrough will be uploaded to this project folder as `15_spy_timeseries_sota_forecasting.mp4`. Status: pending recording.
